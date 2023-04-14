@@ -9,7 +9,8 @@ const form=()=>{
         form.setAttribute("novalidate","");
         form.setAttribute("id","form");
 
-        form.innerHTML = `<label for="email">E-mail: </label>
+        form.innerHTML = `
+        <label for="email">E-mail: </label>
         <input type="email" required name="email" id="email">
         <span class="error" aria-live="polite"></span>
         <label for="country">Country: </label>
@@ -81,7 +82,7 @@ const form=()=>{
 
             if (passwordconf.value === password.value) {
               passwordconfError.textContent = "";
-              email.classList.remove("error-style");
+              passwordconf.classList.remove("error-style");
 
             } else {
                 showError(passwordconf);
@@ -133,7 +134,7 @@ const form=()=>{
                 passwordError.textContent = `Password should be at least 8 characters long.`;
               }
               else if (password.validity.patternMismatch) {
-                passwordError.textContent = `Password should contain atleast one number and one uppercase letter.`;
+                passwordError.innerHTML = `Password should contain atleast one number<br> and one uppercase letter.`;
               }
               
         }
