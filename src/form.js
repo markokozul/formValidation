@@ -5,6 +5,7 @@ const form=()=>{
     const content = document.getElementById("content");
 
     const createForm=(()=>{
+
         const form = document.createElement("form");
         form.setAttribute("novalidate","");
         form.setAttribute("id","form");
@@ -28,6 +29,7 @@ const form=()=>{
 
         content.appendChild(form)
     })();
+    
     const form = document.querySelector("form");
     const email = document.getElementById("email");
     const zipCode = document.getElementById("zipcode");

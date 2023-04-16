@@ -4,7 +4,7 @@
 }
 
 #content{
-    height: 95vh;
+    height: 580px;
     width: 100%;
     margin: 0;
     display: flex;
@@ -12,9 +12,13 @@
     justify-content: center;
 }
 #form{
-    width: 300px;
+    width: 270px;
     display: flex;
     flex-direction: column;
+    padding: 30px 60px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 #form label{
     font-weight: bold;
@@ -33,15 +37,15 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
   }
   
 #form input[type=submit]{
     width: 20%;
-    margin: 15px;
     align-self: center;
     box-sizing: unset;
+    font-weight: bold;
 }
 
 .error {
@@ -54,6 +58,6 @@ input {
     margin-bottom: 20px;
   }
 #form .error-style{
-    border: 2px solid rgb(170, 0, 0);
+    border: 1px solid rgb(170, 0, 0);
 }
   
