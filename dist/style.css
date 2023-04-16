@@ -12,10 +12,10 @@
     justify-content: center;
 }
 #form{
-    width: 270px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    padding: 30px 60px;
+    padding: 30px 50px;
     background-color: rgb(231, 231, 231);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
